@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="PiliPiliWeb_Tomcat:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/PiliPiliWeb_Tomcat_war</output-path>
+    <root id="archive" name="PiliPiliWeb_Tomcat_war.war">
+      <element id="artifact" artifact-name="PiliPiliWeb_Tomcat:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jfinal-3.4-bin-with-src1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

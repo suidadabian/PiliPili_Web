@@ -1,0 +1,63 @@
+Table: comment
+---------------+--------------+------+-----+---------+---------
+ Field         | Type         | Null | Key | Default | Remarks 
+---------------+--------------+------+-----+---------+---------
+ id            | BIGINT(19)   | NO   | PRI |         |         
+ userId        | BIGINT(19)   | NO   |     |         |         
+ infoPictureId | BIGINT(19)   | NO   |     |         |         
+ comment       | VARCHAR(127) | NO   |     |         |         
+ date          | DATETIME(26) | NO   |     |         |         
+ replyNum      | INT(10)      | NO   |     |         |         
+---------------+--------------+------+-----+---------+---------
+
+Table: infopicture
+------------+--------------+------+-----+---------+---------
+ Field      | Type         | Null | Key | Default | Remarks 
+------------+--------------+------+-----+---------+---------
+ id         | BIGINT(19)   | NO   | PRI |         |         
+ userId     | BIGINT(19)   | NO   |     |         |         
+ url        | VARCHAR(127) | NO   |     |         |         
+ date       | DATETIME(26) | NO   |     |         |         
+ share      | SMALLINT(5)  | NO   |     |         |         
+ title      | VARCHAR(127) | NO   |     |         |         
+ intro      | VARCHAR(127) | NO   |     |         |         
+ deletehash | VARCHAR(127) | NO   |     |         |         
+------------+--------------+------+-----+---------+---------
+
+Table: lightpicture
+------------+--------------+------+-----+---------+---------
+ Field      | Type         | Null | Key | Default | Remarks 
+------------+--------------+------+-----+---------+---------
+ id         | BIGINT(19)   | NO   | PRI |         |         
+ userId     | BIGINT(19)   | NO   |     |         |         
+ url        | VARCHAR(127) | NO   |     |         |         
+ date       | DATETIME(26) | NO   |     |         |         
+ share      | SMALLINT(5)  | NO   |     |         |         
+ scale      | FLOAT(12)    | NO   |     |         |         
+ deletehash | VARCHAR(127) | NO   |     |         |         
+------------+--------------+------+-----+---------+---------
+
+Table: reply
+-----------+--------------+------+-----+---------+---------
+ Field     | Type         | Null | Key | Default | Remarks 
+-----------+--------------+------+-----+---------+---------
+ id        | BIGINT(19)   | NO   | PRI |         |         
+ userId    | BIGINT(19)   | NO   |     |         |         
+ commentId | BIGINT(19)   | NO   |     |         |         
+ reply     | VARCHAR(127) | NO   |     |         |         
+ date      | DATETIME(26) | NO   |     |         |         
+-----------+--------------+------+-----+---------+---------
+
+Table: user
+-----------+--------------+------+-----+-----------------------------+---------
+ Field     | Type         | Null | Key | Default                     | Remarks 
+-----------+--------------+------+-----+-----------------------------+---------
+ id        | BIGINT(19)   | NO   | PRI |                             |         
+ account   | VARCHAR(127) | NO   |     |                             |         
+ password  | VARCHAR(127) | NO   |     |                             |         
+ avatarUrl | VARCHAR(127) | NO   |     | https://imgur.com/a/aNDWfT1 |         
+ name      | VARCHAR(127) | NO   |     |                             |         
+ sex       | SMALLINT(5)  | NO   |     | 3                           |         
+ sign      | VARCHAR(127) | NO   |     |                             |         
+-----------+--------------+------+-----+-----------------------------+---------
+

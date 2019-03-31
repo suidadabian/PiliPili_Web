@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="PiliPiliWeb_Tomcat:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PiliPiliWeb_Tomcat_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="PiliPiliWeb_Tomcat/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PiliPiliWeb_Tomcat" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jfinal-3.4-bin-with-src1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

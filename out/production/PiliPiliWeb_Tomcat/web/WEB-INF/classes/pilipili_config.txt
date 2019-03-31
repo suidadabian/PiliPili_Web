@@ -1,0 +1,4 @@
+jdbcUrl = jdbc:mysql://localhost/pilipili?characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC
+user = root
+password = a466586
+devMode = true
